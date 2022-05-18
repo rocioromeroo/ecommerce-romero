@@ -1,21 +1,14 @@
 .navbar{
-    position: relative;
-    width: 100%;
-    justify-content: space-around;
-    background-color: rgb(249, 244, 244);
+    background-color: rgb(224, 210, 210);
 }
 
-.logo{
-    display: inline-block;
-    color: black;
+ul{
+    margin: 0!important;
+    padding: 0!important;
 }
 
 .categorias{
-    position: relative;
-    display: inline-block;
     width: 40%;
-    margin-left: 40%;
-    text-align: right;
 }
 
 .categorias li{
@@ -27,11 +20,11 @@
 .categorias a{
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-size: 20px;
 }
 
 .categorias a:hover{
     color: rgb(147, 147, 147);
+    text-decoration: none;
 }
-
