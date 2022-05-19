@@ -2,7 +2,7 @@ import ItemCount from "../ItemCount/ItemCount";
 
 const Item = (props) => {
     return (
-        <div className="item-products" style={{padding: "10%", backgroundColor: "#F4F4F4", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}} >
+        <div className="item-products" style={{padding: "10%", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}} >
 
             <div className="image">
                 <img src= {props.image} alt={props.itemName} style={{padding:"10%"}} />
