@@ -1,5 +1,6 @@
+import "./ItemCount.css"
 import { useState } from "react";
-import Button from "../Button/ButtonTransparent";
+import ButtonTransparent from "../ButtonTransparent/ButtonTransparent";
 
 const CountItem = (props) => {
     const [count, setCount] = useState(0)
@@ -17,13 +18,13 @@ const CountItem = (props) => {
     }
 
     return (
-        <div style={{padding:"0.5%", margin:"10%", display: "flex", justifyContent: "center", backgroundColor:"rgb(224, 210, 210)", borderRadius:"20px"}}>
+        <div className="count">
             <div className="col-auto">
-                <Button handleClick={decrement} label="-" color="#fff" size="20px"></Button>
+                <ButtonTransparent handleClick={decrement} label="-" color="#fff" size="20px" />
             </div>
             <h3 style={{margin:"0", color: "#fff", fontWeight:"lighter"}}> {count} </h3>
             <div className="col-auto">
-                <Button handleClick={increment} label="+" color="#fff" size="20px"></Button>
+                <ButtonTransparent handleClick={increment} label="+" color="#fff" size="20px" />
             </div>
         </div>
     )

@@ -1,0 +1,43 @@
+.product-information{
+    margin-top:"10%";
+    box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 10%;
+}
+
+.product-information .image-product img{
+    width: 100%;
+}
+
+.product-information .title{
+    margin-top: 5%;
+}
+
+.product-information .title h3{
+    font-weight: lighter;
+}
+
+.product-information .price{
+    font-weight: lighter;
+    padding-bottom: 2%;
+}
+
+.product-information .price h3{
+    font-weight: lighter;
+}
+
+.product-information .stock{
+    color: rgb(206 206 206);
+}
+
+.product-information .stock p{
+    font-weight: lighter;
+}
+
+.product-information .ver-mas{
+    background-color: rgb(224, 210, 210);
+    padding: 2%;
+}
+
+.product-information .ver-mas button{
+    color: #fff;
+}

@@ -4,7 +4,7 @@ import Logo from "../Logo/Logo";
 
 const NavBar = () => {
     return (
-        <nav className="navbar" style={{marginBottom: "2%"}}>
+        <nav className="navbar">
             <div className="container">
                 <Logo />
                 <div className="categorias">

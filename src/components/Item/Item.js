@@ -1,20 +1,35 @@
-import ItemCount from "../ItemCount/ItemCount";
+import "./Item.css"
+// import ItemCount from "../ItemCount/ItemCount";
+import DecimalStyle from "../DecimalStyle/DecimalStyle";
+import ButtonTransparent from "../ButtonTransparent/ButtonTransparent"
 
-const Item = (props) => {
+const Item = ({name, price, img, stock}) => {
     return (
-        <div className="item-products" style={{marginTop:"10%", padding: "10%", boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"}} >
-            <div className="image">
-                <img src= {props.image} alt={props.itemName} style={{padding:"10%"}} />
-            </div>
+        <div className="col-sm-3">
+            <div className="product-information">
+                <div className="image-product">
+                    <img src={img} alt={name} />
+                </div>
 
-            <div className="title">
-                <h3 style={{fontWeight:"lighter"}}>- {props.itemName} -</h3>
-            </div>
+                <div className="title">
+                    <h3>- {name} -</h3>
+                </div>
 
-            <div className="stock">
-                <p style={{color:"rgb(206 206 206)", fontWeight:"lighter"}}>Stock disponible: {props.stock}</p>
+                <div className="stock">
+                    <p>Stock disponible: {stock}</p>
+                </div>
+
+                <div className="price">
+                    <h3>$ {DecimalStyle(price)}</h3>
+                </div>
+
+                {/* <ItemCount stock= {stock} /> */}
+
+                <div className="ver-mas">
+                    <ButtonTransparent label="VER MÁS" />
+                </div>
+
             </div>
-            <ItemCount stock= {props.stock} />
         </div>
     )
 }

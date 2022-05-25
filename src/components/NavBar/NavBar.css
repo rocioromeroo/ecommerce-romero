@@ -7,6 +7,10 @@ ul{
     padding: 0!important;
 }
 
+.logo img{
+    width: 95px;
+}
+
 .categorias{
     width: 40%;
 }
