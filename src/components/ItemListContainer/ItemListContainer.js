@@ -11,6 +11,7 @@ const ItemListContainer = () => {
             setProducts(response)
         })
     })
+    
     return (
         <div className="container item-list">
             <ItemList products={products} />
