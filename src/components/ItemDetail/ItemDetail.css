@@ -1,0 +1,16 @@
+.item-image img {
+    width: 100%;
+}
+
+.item-name h1{
+    font-size: 50px;
+}
+
+.item-detail .item-price h2{
+    font-size: 40px;
+}
+
+.item-detail .item-description p{
+    font-size: 25px;
+    font-weight: lighter;
+}
