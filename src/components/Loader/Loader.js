@@ -3,7 +3,7 @@ import "./Loader.css"
 const Loader = (() => {
     return (
         <div className="loader">
-            <img src="/loading.gif" alt="loading"></img>
+            <img src="/images/loader.gif" alt="loading"></img>
         </div>
     )
 })

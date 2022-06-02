@@ -1,5 +1,4 @@
 # BY OLIVIA
-***
 El proyecto es un e-commerse dedicado a la venta de calzado.
 
 ## Desarrollado con
@@ -10,6 +9,7 @@ El proyecto es un e-commerse dedicado a la venta de calzado.
 * React-Bootstrap
 
 ## Demostración
+![alt text](./public/images/gif-primera-entrega.gif)
 
 ## Dependencias NPM
 * Font-awesome
