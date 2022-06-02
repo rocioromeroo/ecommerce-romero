@@ -6,6 +6,14 @@
     z-index: 1;
 }
 
+.logo h2{
+    color: #000;
+}
+
+.logo a:hover{
+    text-decoration: none;
+}
+
 .navbar{
     background-color: rgb(255, 255, 255, 0.9);
 

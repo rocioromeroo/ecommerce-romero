@@ -1,16 +1,32 @@
 import { useState, useEffect } from "react";
 import { getProductsById } from "../../asyncmock";
 import ItemDetail from "../ItemDetail/ItemDetail";
-// import "./ItemDetailtContainer.css";
+import { useParams } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 const ItemDetailContainer = ({id}) => {
+    const [loading, setLoading] = useState(true)
     const [product, setProduct] = useState([])
 
+    const {productId} = useParams()
+
+
     useEffect(() => {
-        getProductsById("2").then(response => { 
+        setLoading(true)
+        getProductsById(productId).then(response => { 
             setProduct(response)
+        }).catch(error => {
+            console.log("error")
+        }).finally(() => {
+            setLoading(false)
         })
-    }, [])
+    },[])
+
+    if(loading){
+        return (
+            <Loader />
+        ) 
+    }
     
     return (
         <div className="container">

@@ -1,5 +1,4 @@
 import "./ItemDetail.css"
-// import ItemCount from "../ItemCount/ItemCount";
 import DecimalStyle from "../DecimalStyle/DecimalStyle";
 
 

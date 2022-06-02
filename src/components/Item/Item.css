@@ -38,6 +38,11 @@
     padding: 2%;
 }
 
-.product-information .ver-mas button{
+.product-information .ver-mas a{
     color: #fff;
+}
+
+.product-information .ver-mas a:hover{
+    text-decoration: none;
+    color:rgb(195, 195, 195);
 }

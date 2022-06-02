@@ -1,9 +1,8 @@
 import "./Item.css"
-// import ItemCount from "../ItemCount/ItemCount";
 import DecimalStyle from "../DecimalStyle/DecimalStyle";
-import ButtonTransparent from "../ButtonTransparent/ButtonTransparent"
+import { Link } from "react-router-dom";
 
-const Item = ({name, price, img, stock}) => {
+const Item = ({id, name, price, img, stock}) => {
     return (
         <div className="col-sm-3">
             <div className="product-information">
@@ -26,7 +25,7 @@ const Item = ({name, price, img, stock}) => {
                 {/* <ItemCount stock= {stock} /> */}
 
                 <div className="ver-mas">
-                    <ButtonTransparent label="VER MÁS" />
+                    <Link to={`/detail/${id}`}> VER MÁS </Link>
                 </div>
 
             </div>
