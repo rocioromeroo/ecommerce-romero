@@ -18,3 +18,9 @@
     font-size: 25px;
     font-weight: lighter;
 }
+
+.count input{
+    width: 30%;
+    text-align: center;
+    margin-right: 6%;
+}
