@@ -1,0 +1,19 @@
+.cart-item{
+    padding-top: 3%;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px ;
+    border-color: #000;
+}
+
+.cart-item p{
+    margin-bottom: 0;
+}
+
+.cart-item img{
+    width: 5%;
+}
+
+.cart-item-name p{
+    text-transform: uppercase;
+}

@@ -1,17 +1,21 @@
 import "./ItemDetail.css";
 import DecimalStyle from "../DecimalStyle/DecimalStyle";
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import ItemCount from "../ItemCount/ItemCount";
+import CartContext from "../../context/CartContext";
 
 
 const ItemDetail = ({id, name, price, img, descripcion, stock}) => {
     const [quantity, setQuantity] = useState(0)
 
+    const { addItem, getProduct } = useContext(CartContext)
+
     const handleOnAdd = (count) => {
         console.log('agregue al carrito')
         console.log(count)
         setQuantity(count)
+        addItem({id, name, price, quantity, img})
     }
 
     return (
@@ -35,7 +39,7 @@ const ItemDetail = ({id, name, price, img, descripcion, stock}) => {
                     </div>
                     { quantity > 0  
                     ? <Link to='/cart'>Finalizar compra</Link> 
-                    : <ItemCount stock={stock} onConfirm={handleOnAdd}/>}
+                    : <ItemCount stock={stock} onConfirm={handleOnAdd} initial={getProduct(id)?.quantity}/>}
                 </div>
             </div>
         </div>
