@@ -4,7 +4,7 @@ const products = [
         name: "Olivia",
         price: 3500,
         category: "texanas",
-        img: "/images/zapatos/texanas/olivia-n-1.jpg",
+        img: ["/images/zapatos/texanas/olivia-n-1.jpg", "/images/zapatos/texanas/olivia-n-2.jepg", "/images/zapatos/texanas/olivia-n-3.jepg"],
         stock: 10,
         descripcion: "Texanas caña alta con detalle en plata."
     },
@@ -14,7 +14,7 @@ const products = [
         name: "Clara",
         price: 2800,
         category: "texanas",
-        img: "/images/zapatos/texanas/clara-crema-1.jpeg",
+        img: ["/images/zapatos/texanas/clara-crema-1.jpeg", "/images/zapatos/texanas/clara-crema-2.jpeg", "/images/zapatos/texanas/clara-crema-3.jpeg", "/images/zapatos/texanas/clara-crema-4.jpeg"],
         stock: 12,
         descripcion: "Texanas caña alta color crema."
     },
@@ -24,7 +24,7 @@ const products = [
         name: "Mica",
         price: 2500,
         category: "texanas",
-        img: "/images/zapatos/texanas/mica-n-1.jpeg",
+        img: ["/images/zapatos/texanas/mica-n-1.jpeg", "/images/zapatos/texanas/mica-n-2.jpeg", "/images/zapatos/texanas/mica-n-3.jpeg", "/images/zapatos/texanas/mica-n-4.jpeg"],
         stock: 8,
         descripcion: "Texanas caña baja con tachas y apliques plata."
     },
@@ -34,7 +34,7 @@ const products = [
         name: "Yolanda",
         price: 2700,
         category: "texanas",
-        img: "/images/zapatos/texanas/yolanda-n-1.jpg",
+        img: ["/images/zapatos/texanas/yolanda-n-1.jpg", "/images/zapatos/texanas/yolanda-n-2.jpg", "/images/zapatos/texanas/yolanda-n-3.jpg", "/images/zapatos/texanas/yolanda-n-4.jpg"],
         stock: 8,
         descripcion: "Texanas caña baja negras con textura croco."
     },
@@ -44,7 +44,7 @@ const products = [
         name: "Caro",
         price: 2000,
         category: "flats",
-        img: "/images/zapatos/flats/caro-b-1.jpg",
+        img: ["/images/zapatos/flats/caro-b-1.jpg", "/images/zapatos/flats/caro-b-2.jpg", "/images/zapatos/flats/caro-b-3.jpg"],
         stock: 12,
         descripcion: "Flats con tira ancha en color beige."
     },
@@ -54,7 +54,7 @@ const products = [
         name: "Sabri",
         price: 3800,
         category: "botas",
-        img: "/images/zapatos/botas/sabri-plata-1.jpg",
+        img: ["/images/zapatos/botas/sabri-plata-1.jpg", "/images/zapatos/botas/sabri-plata-2.jpg", "/images/zapatos/botas/sabri-plata-3.jpg"],
         stock: 5,
         descripcion: "Bota caña alta en color plata con brillos."
     },
@@ -64,7 +64,7 @@ const products = [
         name: "Sofia",
         price: 3800,
         category: "botas",
-        img: "/images/zapatos/botas/sofia-n-1.jpg",
+        img: ["/images/zapatos/botas/sofia-n-1.jpg", "/images/zapatos/botas/sofia-n-2.jpg", "/images/zapatos/botas/sofia-n-3.jpg", "/images/zapatos/botas/sofia-n-4.jpg"],
         stock: 10,
         descripcion: "Bota caña alta en color negro con textura croco."
     },
@@ -74,7 +74,7 @@ const products = [
         name: "Flor",
         price: 3500,
         category: "borcegos",
-        img: "/images/zapatos/borcegos/flor-n-1.jpg",
+        img: ["/images/zapatos/borcegos/flor-n-1.jpg", "/images/zapatos/borcegos/flor-n-2.jpg", "/images/zapatos/borcegos/flor-n-3.jpg"],
         stock: 10,
         descripcion: "Borcegos caña media."
     }

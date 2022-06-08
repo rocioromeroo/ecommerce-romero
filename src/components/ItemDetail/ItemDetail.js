@@ -18,7 +18,9 @@ const ItemDetail = ({id, name, price, img, descripcion, stock}) => {
         <div className="container item-detail">
             <div className="row">
                 <div className="col-sm-8 item-image">
-                    <img src={img} alt="" />
+                    <img src={img[0]} alt={name} />
+                    <img src={img[1]} alt={name} />
+                    <img src={img[2]} alt={name} />
                 </div>
                 <div className="col-sm-4 text-left">
 

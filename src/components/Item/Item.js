@@ -7,7 +7,7 @@ const Item = ({id, name, price, img, stock}) => {
         <div className="col-sm-3">
             <div className="product-information">
                 <div className="image-product">
-                    <img src={img} alt={name} />
+                    <img src={img[0]} alt={name} />
                 </div>
 
                 <div className="title">
