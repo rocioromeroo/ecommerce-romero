@@ -1,3 +1,13 @@
+.item-detail a:hover {
+    text-decoration: none;
+    color: rgb(147, 147, 147);
+    opacity: 0.6;
+}
+
+.item-detail a {
+    color: rgb(129, 129, 129);
+}
+
 .item-detail{
     padding-top: 5%;
 }

@@ -1,3 +1,24 @@
+.cart-title{
+    padding-top: 3%;
+}
+
+.empty-cart{
+    padding: 10%;
+}
+
+.empty-cart h3{
+    font-weight: lighter;
+}
+
+.empty-cart a:hover{
+    text-decoration: none;
+    color: rgb(147, 147, 147);
+}
+
+.empty-cart a{
+    color: #000;
+}
+
 .cart-item{
     padding-top: 3%;
     justify-content: space-around;
@@ -16,4 +37,14 @@
 
 .cart-item-name p{
     text-transform: uppercase;
+}
+
+.cart-total {
+    padding-top: 3%;
+    border-bottom: 1px ;
+    border-color: #000;
+}
+
+.cart-total p{
+    font-weight: bold;
 }

@@ -6,3 +6,8 @@
     padding: 0.5%;
     margin: 10%;
 }
+
+button:hover{
+    text-decoration: none;
+    color: rgb(147, 147, 147);
+}

@@ -4,14 +4,24 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTrash} from "@fortawesome/free-solid-svg-icons";
 import DecimalStyle from "../DecimalStyle/DecimalStyle";
 import "./Cart.css"
+import { Link } from "react-router-dom";
+
 
 const Cart = () => {
 
-    const { cart, removeItem } = useContext(CartContext)
+    const { cart, removeItem, getTotal, getQuantity } = useContext(CartContext)
+
+    if (getQuantity() === 0){
+        return (
+            <div className="empty-cart">
+                <h3>No hay productos en el carrito</h3>
+                <p><Link to="/">Seguí navegando</Link></p>
+            </div>
+        )
+    }
 
     return(
         <div>
-            <h1>Cart</h1>
             <div>
                 {cart.map(prod => {
                     return(
@@ -33,10 +43,18 @@ const Cart = () => {
                                     <button onClick={() => removeItem(prod.id)}><FontAwesomeIcon icon={faTrash}/></button>
                                 </div>
                             </div>
+                            
                             <hr/>
                         </div>
                     )})
                 }
+                <div className="container text-right ">
+                    <div className="cart-total col-sm-10">
+                        <p>Total: ${DecimalStyle(getTotal())} </p>
+                    </div>
+                </div>
+
+                    
             </div>
         </div>
     )
