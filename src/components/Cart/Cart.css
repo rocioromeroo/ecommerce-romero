@@ -48,3 +48,40 @@
 .cart-total p{
     font-weight: bold;
 }
+
+.clear-cart button{
+    padding-left: 0;
+    color:rgb(147, 147, 147)!important;   
+    font-size: 14px;
+    padding-right: 3%;
+}
+
+.clear-cart {
+    padding-right: 0.5%;
+}
+
+.clear-cart button:hover{
+    text-decoration: none;
+    color: rgb(147, 147, 147)!important;
+    opacity: 0.7;
+}
+
+.finalizar{
+    padding-top: 3%;
+}
+
+.finalizar button{
+    background-color: rgb(224, 210, 210);
+    color: white;
+    border-radius: 15px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.finalizar button:hover{
+    background-color: rgb(224, 193, 193);
+    color: white;
+    border-radius: 15px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
