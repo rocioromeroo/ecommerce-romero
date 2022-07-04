@@ -5,37 +5,13 @@ import {faTrash} from "@fortawesome/free-solid-svg-icons";
 import DecimalStyle from "../DecimalStyle/DecimalStyle";
 import "./Cart.css"
 import { Link } from "react-router-dom";
-import { addDoc, collection } from 'firebase/firestore'
-import { db, collectionsName} from '../../service/firebase'
+import ContactForm from "../ContactForm/ContactForm";
 
 
 const Cart = () => {
 
     const { cart, removeItem, getTotal, getQuantity, clearCart } = useContext(CartContext)
 
-    const createOrder = () => {
-        console.log('crear orden')
-
-        const objOrder = {
-            buyer: {
-                name: 'Sebastian Zuviria',
-                email: 'seba@email.com',
-                phone: '123456789',
-                address: 'direccion 12345',
-                comment: 'comentario'
-            },
-            items: cart,
-            total: getTotal()
-        }
-
-        console.log (objOrder)
-
-        const collectionRef = collection(db, collectionsName.orders)
-        
-        addDoc(collectionRef, objOrder).then(({ id }) => {
-            
-        })
-    }
 
     if (getQuantity() === 0){
         return (
@@ -80,18 +56,16 @@ const Cart = () => {
                         <div className="cart-total col-sm-10 text-right">
                             <p>Total: ${DecimalStyle(getTotal())} </p>
                         </div>
-                        <div className="finalizar col-sm-2 text-left">
-                            <button onClick={createOrder()}>Finalizar compra</button>
+                        <div className="clear-cart col-sm-2 text-left">
+                            <button onClick={() => clearCart(cart)}>Borrar Carrito</button>
                         </div>
                     </div>
                     <div className="clear-cart col-sm-11 text-right">
-                        <button onClick={() => clearCart(cart)}>Borrar Carrito</button>
+                        
                     </div>
                 </div>
-
             </div>
-            {/* <ContactForm></ContactForm> */}
-
+            <ContactForm></ContactForm>
         </div>
         
 
