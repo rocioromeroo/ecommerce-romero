@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ecommerce-romero/static/css/main.5da4f2cc.css",
+    "main.js": "/ecommerce-romero/static/js/main.f655e72a.js",
+    "static/js/787.0b99cf73.chunk.js": "/ecommerce-romero/static/js/787.0b99cf73.chunk.js",
+    "index.html": "/ecommerce-romero/index.html",
+    "main.5da4f2cc.css.map": "/ecommerce-romero/static/css/main.5da4f2cc.css.map",
+    "main.f655e72a.js.map": "/ecommerce-romero/static/js/main.f655e72a.js.map",
+    "787.0b99cf73.chunk.js.map": "/ecommerce-romero/static/js/787.0b99cf73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5da4f2cc.css",
+    "static/js/main.f655e72a.js"
+  ]
+}
