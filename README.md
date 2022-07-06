@@ -9,7 +9,7 @@ El proyecto es un e-commerse dedicado a la venta de calzado.
 * React-Bootstrap
 
 ## Demostración
-![alt text](./public/images/gif-primera-entrega.gif)
+![alt text](./public/images/gif-final.gif)
 
 ## Dependencias NPM
 * Font-awesome
